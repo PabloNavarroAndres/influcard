@@ -14,10 +14,28 @@ export class InflucardService {
   // Ruta del archivo JSON con los datos del influencer
   private influcardsUrl = 'assets/data.json';
 
-  // Obtener todos los influcard con la información resumida
-  getInflucards(): Observable<InflucardResume[]> {
-    return this._http.get<InflucardResume[]>(this.influcardsUrl);
+  // Método para obtener la lista de InflucardResume directamente
+  getInflucardResume(): Observable<InflucardResume> {
+    return this._http.get<any>(this.influcardsUrl).pipe(
+      map(data => {
+        const influcard = data.influcard;
+        return {
+          id: influcard.id,
+          username: influcard.username,
+          age: influcard.age,
+          gender: influcard.gender,
+          country: influcard.country,
+          rrss_name: influcard.rrss_name,
+          rrss_icon: influcard.rrss_icon,
+          engagement_formated: influcard.engagement_formated,
+          engagement_rate: influcard.engagement_rate,
+          impressions_formated: influcard.impressions_formated,
+          interests: influcard.interests ? influcard.interests.split(' , ') : []
+        } as InflucardResume;
+      })
+    );
   }
+
 
   // Obtener influcard por id
   getInflucardById(id: string): Observable<Influcard> {

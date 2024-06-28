@@ -8,3 +8,15 @@ body {
   background-color: var(--background-color);
   color: var(--text-color);
 }
+
+/* Modo esquema (temporal) */
+* {
+  background-color: rgb(0, 94, 0);
+  border: 1px solid black;
+}
+
+ul {
+  list-style: none;
+}
+
+

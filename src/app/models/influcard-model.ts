@@ -1,11 +1,9 @@
 import { InflucardResume } from "./influcard-resume.model";
 
 export interface Influcard extends InflucardResume {
-  account_url: string;
   reach_formated_graph: number;
   relevance_formated_graph: number;
   resonance_formated_graph: number;
-  account_picture: string;
   followers_formated: string;
   real_followers_formated: string;
   fake_followers_formated: number;

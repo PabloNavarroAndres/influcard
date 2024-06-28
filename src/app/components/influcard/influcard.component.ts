@@ -4,11 +4,14 @@ import { Influcard } from '../../models/influcard-model';
 import { InflucardService } from '../../services/influcard.service';
 import { InflucardResume } from '../../models/influcard-resume.model';
 import { RouterLink } from '@angular/router';
+import { TruncatePipe } from '../../pipes/truncate.pipe';
+import { ShortNumberPipe } from '../../pipes/short-number.pipe';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-influcard',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, TruncatePipe, ShortNumberPipe],
   templateUrl: './influcard.component.html',
   styleUrl: './influcard.component.css'
 })
@@ -39,6 +42,15 @@ export class InflucardComponent {
         console.error('Error obteniendo datos de Influcard:', err);
       },
     })
+  }
+
+  // Animacion "Ripple" al dar click a la imagen
+  onImageClick(event: MouseEvent) {
+    const target = event.currentTarget as HTMLElement;
+    target.classList.add('ripple');
+    setTimeout(() => {
+      target.classList.remove('ripple');
+    }, 500);
   }
 
   /* // Obtener influcard buscada por id

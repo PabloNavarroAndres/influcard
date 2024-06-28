@@ -35,9 +35,10 @@ export class InflucardService {
           rrss_name: influcard.rrss_name,
           rrss_icon: influcard.rrss_icon,
           engagement_formated: influcard.engagement_formated,
-          engagement_rate: influcard.engagement_rate,
+          er_audiencia: influcard.er_audiencia,
+          followers_fake: influcard.followers_fake,
           impressions_formated: influcard.impressions_formated,
-          interests: influcard.interests ? influcard.interests.split(' , ') : []
+          interests: influcard.interests
         };
 
         // Crear un array de 12 elementos con el influcardResume duplicado
@@ -112,9 +113,10 @@ export class InflucardService {
       rrss_name: influcard.rrss_name,
       rrss_icon: influcard.rrss_icon,
       engagement_formated: influcard.engagement_formated,
-      engagement_rate: influcard.engagement_rate,
+      er_audiencia: influcard.er_audiencia,
+      followers_fake: influcard.followers_fake,
       impressions_formated: influcard.impressions_formated,
-      interests: influcard.interests ? influcard.interests.split(', ') : []
+      interests: influcard.interests
     };
   }
 

@@ -7,7 +7,6 @@ export interface Influcard extends InflucardResume {
   followers_formated: string;
   real_followers_formated: string;
   fake_followers_formated: number;
-  followers_fake: number;
   insight_perc_13: number;
   insight_perc_18: number;
   insight_perc_25: number;

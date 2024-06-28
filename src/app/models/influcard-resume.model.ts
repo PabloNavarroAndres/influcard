@@ -9,7 +9,8 @@ export interface InflucardResume {
     rrss_name: string;
     rrss_icon: string;
     engagement_formated: string;
-    engagement_rate: string;
+    er_audiencia: number;
+    followers_fake: number;
     impressions_formated: string;
-    interests: string[];
+    interests: string;
 }

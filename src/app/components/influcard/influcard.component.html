@@ -7,10 +7,11 @@
             <div class="influcard-left">
 
                 <!-- Imagen -->
-                <div class="image-container" (click)="onImageClick($event)">
+                <div class="image-container" (click)="onImageClick($event, influcard.id)">
                     <img [src]="influcard.account_picture" alt="imagen influencer">
                     <div class="overlay">ver influcard</div>
                 </div>
+                
 
                 <div class="info">
 

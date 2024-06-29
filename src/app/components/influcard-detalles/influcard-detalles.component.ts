@@ -21,27 +21,7 @@ export class InflucardDetallesComponent {
   ngOnInit(): void {
     
     // Se busca la influcard de la que vamos a ver detalles
-    this.getInflucard();
+    this.influcard = this._influcardService.getInflucardData();
   }
 
-  // Obtener influcard buscada por id
-  getInflucard(): void {
-    // Obtener el id de los parametros de ruta
-    const id = this._route.snapshot.paramMap.get('id');
-
-    // Si hay parámetro de id se procede a usarlo
-    if (id) {
-
-      // Obtener el influcard buscado por id
-      this._influcardService.getInflucardById(id).subscribe ({
-        next: (data?: Influcard) => {
-          this.influcard = data;
-        },
-        error(err) {
-          console.error('Error obteniendo datos de Influcard:', err);
-        },
-      })
-
-    }
-  } 
 }

@@ -9,6 +9,16 @@ import { InflucardResume } from '../models/influcard-resume.model';
 })
 export class InflucardService {
 
+  influcardData?: Influcard;
+  
+  setInflucardData(data?: Influcard) {
+    this.influcardData = data;
+  }
+
+  getInflucardData(): Influcard | undefined {
+    return this.influcardData;
+  }
+
   // Modulo http
   private _http = inject(HttpClient);
   // Ruta del archivo JSON con los datos del influencer

@@ -35,8 +35,23 @@ export class InflucardDetallesComponent {
 
   ngOnInit(): void {
     
-    // Se busca la influcard de la que vamos a ver detalles
-    this.influcard = this._influcardService.getInflucardData();
+    /* MANTENER ESTA FUNCION AL TERMINAR PROYECTO: */
+    /* // Se busca la influcard de la que vamos a ver detalles
+    this.influcard = this._influcardService.getInflucardData(); */
+
+    /* Obtenerlo directamente al entrar (TEMPORAL - BORRAR AL TERMINAR) */
+    this._influcardService.getInflucardById("4__4355072").subscribe ({
+      next: (data?: Influcard) => {
+        this.influcard = data;
+
+        // Guardar influcard encontrado en el servicio influcard
+        this._influcardService.setInflucardData(data);
+      },
+      error: (err) => {
+
+        console.error('Error obteniendo datos de Influcard:', err);
+      }
+    });
   }
 
   descargarInflucard(): void {

@@ -101,7 +101,8 @@ export class InflucardService {
             vr_audiencia: influcard.vr_audiencia,
             er_alcance: influcard.er_alcance,
             er_audiencia: influcard.er_audiencia,
-            post_week_day: influcard.post_week_day.map((day: any) => ({ engrate: day.engrate }))
+            post_week_day: influcard.post_week_day.map((day: any) => ({ engrate: day.engrate })),
+            updated_at_formated: influcard.updated_at_formated
           } as Influcard;
         } else {
           return undefined;

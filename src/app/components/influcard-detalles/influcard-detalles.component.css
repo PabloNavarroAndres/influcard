@@ -1,0 +1,265 @@
+:root {
+    --title-big-sections: 1.5rem;
+    --title-mid-sections: 1.3rem;
+    --paragraph-big-size: 1.2rem;
+    --paragraph-mid-size: 1rem;
+    --paragraph-small-size: 0.8rem;
+    --general-font-color: gray;
+    --general-font-color-2: black;
+}
+
+/* Header Section */
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.account-info {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+}
+
+.title-username {
+    font-size: 1.7rem;
+}
+
+.username-perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.personal-info {
+    display: flex;
+    gap: 4px;
+}
+
+.genero-edad {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.circle-big {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    border-radius: 85px;
+    top: 0;
+    left: 0;
+}
+
+.circle-rrss {
+    position: absolute;
+    width: 52px;
+    height: 52px;
+    border-radius: 85px;
+    top: 0;
+    left: 0;
+}
+
+.circle-mid {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    border-radius: 85px;
+}
+
+.circle-big > i,
+.circle-mid > i {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.rrss-logo {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.rrss-usuario {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.rrss-usuario > a {
+    color: rgb(69, 69, 255) !important;
+}
+
+.img-perfil {
+    position: relative;
+    padding-left: 15px;
+}
+
+.img-perfil>img {
+    width: 150px;
+    border-radius: 100px 100px 40px 100px;
+}
+
+.perfil-info {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.header-stadistics {
+    flex: 1;
+    padding-top: 15px;
+}
+
+/* Header: Estadisticas circulares */
+.flex-wrapper {
+    display: flex;
+}
+
+.single-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.single-chart:nth-child(1) span {
+    color: rgb(63, 63, 255);
+}
+
+.single-chart:nth-child(2) span {
+    color: yellow;
+}
+
+.single-chart:nth-child(3) span {
+    color: lightseagreen;
+}
+
+.circular-chart text {
+    stroke: var(--general-font-color);
+}
+
+.circular-chart {
+    display: block;
+    margin: 10px auto;
+    max-width: 30%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+.circular-chart.blue .circle {
+    stroke: rgb(63, 63, 255);
+}
+
+.circular-chart.yellow .circle {
+    stroke: yellow;
+}
+
+.circular-chart.lightseagreen .circle {
+    stroke: lightseagreen;;
+}
+
+.percentage {
+    fill: #666;
+    font-family: sans-serif;
+    font-size: 0.5em;
+    text-anchor: middle;
+}
+
+.menu-section {
+    flex: 1;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.menu-list a {
+    text-decoration: none;
+}
+
+
+/* Secciones principales */
+
+.main-sections {
+    display: flex;
+    gap: 10px;
+}
+
+.audience-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.title-section {
+    display: flex;
+    gap: 5px;
+}
+
+.age-distribution {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bar-container {
+    width: 80%; /* Ancho total del contenedor */
+    height: 20px; /* Altura de la barra */
+    background-color: #cbe3ff; /* Color de fondo del contenedor */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Esconder contenido desbordado */
+    margin: 20px auto; /* Centramos la barra horizontalmente */
+}
+
+.bar {
+    height: 100%;
+    background-color: #00a2ff; /* Color de la barra */
+    border-radius: 10px;
+}
+
+
+
+
+
+.posts-section {
+    flex: 1;
+}
+
+.performance-section {
+    flex: 1;
+}

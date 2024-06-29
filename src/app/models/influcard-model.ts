@@ -28,5 +28,6 @@ export interface Influcard extends InflucardResume {
   er_alcance: number;
   er_audiencia: number;
   post_week_day: { engrate: string }[];
+  updated_at_formated: string;
 }
   

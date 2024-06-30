@@ -2,6 +2,7 @@
 
 .header-info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
 }
@@ -23,6 +24,7 @@
 
 .personal-info {
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
 }
 
@@ -128,8 +130,9 @@
 }
 
 /* Header: Estadisticas circulares */
-.flex-wrapper {
+.stadistics-wrapper {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .single-chart {
@@ -256,6 +259,7 @@
 
 .audience-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding: 25px;
@@ -419,23 +423,97 @@
 }
 
 /* Media Query: Portatil pequeño */
-@media (max-width: 1300px) {
-    
-    
+@media (max-width: 1250px) {
+    .header-stadistics {
+        flex: none;
+        width: 50%;
+        padding-top: 25px;
+    }
 
+    .single-chart {
+        flex: none;
+        width: 50%;
+    }
+
+    .stadistics-wrapper {
+        justify-content: center;
+    }
 }
 
 /* Media Query: Tablet */
-@media (max-width: 768px) {
+@media (max-width: 950px) {
+    .header-info {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circular-chart {
+        max-width: 50%;
+    }
+
+    .single-chart {
+        width: 33%;
+    }
+
+    .main-sections {
+        display: flex;
+        flex-wrap: wrap; /* Permitir el wrapping de los elementos */
+        gap: 10px;
+        padding-top: 10px;
+    }
     
+    .main-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex: 1;
+        gap: 10px;
+    }
+
+    /* Ajustar el orden para evitar el hueco */
+    .main-section:nth-child(3) {
+        order: -1; /* Mover la tercera columna al frente */
+    }
+
+    .img-profile>img {
+        width: 100px;
+    }
     
+    .circle-rrss {
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-section {
+        padding-top: 25px;
+    }
+
+    .menu-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-list {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 33px;
+    }
+
+    .menu-list li {
+        gap: 10px;
+        flex-direction: column;
+    }
+
 
 }
 
 /* Media Query: Movil */
-@media (max-width: 480px) {
-    
-    
+@media (max-width: 412px) {
+
+    .header-stadistics {
+        width: 100%;
+    }
 
 }
 

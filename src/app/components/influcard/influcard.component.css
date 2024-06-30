@@ -211,7 +211,7 @@
 }
 
 /* Media Query: Tablet */
-@media (max-width: 8500px) {
+@media (max-width: 850px) {
     
     .influcard {
         width: 85%;

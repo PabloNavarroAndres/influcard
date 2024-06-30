@@ -64,6 +64,26 @@
     transform: translate(50%, -50%);
 }
 
+.bg-audicence, .bg-performance, .bg-engagement {
+    background-color: rgb(0, 171, 228);
+}
+
+.bg-posts, .bg-views {
+    background-color: rgb(0, 112, 169);
+}
+
+.bg-impressions {
+    background-color: rgb(1, 66, 122);
+}
+
+.bg-reach {
+    background-color: rgb(0, 37, 69);
+}
+
+.bg-audience-2 {
+    background-color: rgb(0, 28, 52);
+}
+
 .rrss-logo {
     background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1000px-Instagram_logo_2022.svg.png');
     background-size: cover;
@@ -205,7 +225,7 @@
 .card-style {
     border-radius: 8px;
     background-color: white;
-    box-shadow: 0px 5px 20px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.75);
 }
 
 /* Secciones principales */
@@ -213,6 +233,7 @@
 .main-sections {
     display: flex;
     gap: 10px;
+    padding-top: 10px;
 }
 
 .audience-section {
@@ -255,7 +276,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    padding: 10px;
     padding-top: 10px;
     gap: 10px;
 }
@@ -265,17 +286,24 @@
 }
 
 .distribution-list {
+    display: flex;
+    flex-direction: column;
     width: 100%;
+    flex: 1;
+    gap: 20px;
 }
 
 .distribution-list li {
     display: flex;
     align-items: center;
+    gap: 5px;
+    font-size: var(--paragraph-small-size);
+    text-align: center;
 }
 
 .distribution-list span, 
 .distribution-list div:nth-child(1) {
-    width: 10%;
+    flex: 0.2;
 }
 
 .distribution-gender-country {
@@ -289,8 +317,14 @@
 
 .country-list {
     display: flex;
+    width: 20% !important;
     gap: 5px;
+    align-items: center;
 }
+
+.distribution-country-bar {
+    width: 60%;
+} 
 
 
 .bar-container {
@@ -299,16 +333,20 @@
     background-color: #cbe3ff; /* Color de fondo del contenedor */
     border-radius: 15px; /* Bordes redondeados */
     overflow: hidden; /* Esconder contenido desbordado */
-    margin: 20px auto; /* Centramos la barra horizontalmente */
+    flex: 1;
 }
 
 .bar {
     height: 100%;
-    background-color: #00a2ff; /* Color de la barra */
+    background-color: #00a2ff;
     border-radius: 10px;
 }
 
-
+.bar-country {
+    height: 100%;
+    background-color: #ff4343;
+    border-radius: 10px;
+}
 
 
 

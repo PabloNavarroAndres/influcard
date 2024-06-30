@@ -172,11 +172,11 @@
 
 <section class="main-sections">
 
-    <section class="audience-section">
+    <section class="main-section">
 
         <div class="title-section card-style">
             <div class="circle-big bg-audicence">
-                <i class="fa-solid fa-users fa-xl"></i>
+                <i class="fa-solid fa-users fa-xl" style="color: white;"></i>
             </div>
             <span>AUDIENCIA</span>
         </div>
@@ -266,11 +266,10 @@
 
                 <span>Distribución por género</span>
 
+                <!-- Amchart Distribucion por genero -->
                 <div id="chartdiv1" style="width: 100%; height: 300px"></div>
             </div>
-
-            <div id="chartdiv2" style="width: 400px; height: 300px"></div>
-
+            
             <div class="distribution-container card-style">
 
                 <span>Distribución por país</span>
@@ -351,9 +350,36 @@
 
     </section>
 
-    <section class="posts-section">
+    <section class="main-section">
 
+        <div class="title-section card-style">
+            <div class="circle-big bg-posts">
+                <i class="fa-solid fa-camera-retro fa-xl" style="color: white;"></i>
+            </div>
+            <span>PUBLICACIONES</span>
+        </div>
 
+        <div class="audience-container card-style">
+
+            <div class="audiencia-info">
+                <span>Audiencia</span>
+                <i class="fa-solid fa-users fa-2xl"></i>
+                <span> {{ influcard?.followers_formated }} </span>
+            </div>
+
+            <div class="audiencia-info">
+                <span>Seguidores Fake</span>
+                <i class="fa-solid fa-users fa-2xl"></i>
+                <span> {{ influcard?.fake_followers_formated }} % </span>
+            </div>
+
+            <div class="audiencia-info">
+                <span>Audiencia Real</span>
+                <i class="fa-solid fa-users-line fa-2xl"></i>
+                <span> {{ influcard?.real_followers_formated }} </span>
+            </div>
+
+        </div>
 
     </section>
 
@@ -361,10 +387,14 @@
 
 
 
-    <section class="performance-section">
+    <section class="main-section">
 
     </section>
 
 </section>
 
 
+
+
+<!-- Amchart final (4) -> MOVER DE AQUI AL FINAL -->
+<!-- <div id="chartdiv4" style="width: 100%; height: 300px"></div> -->

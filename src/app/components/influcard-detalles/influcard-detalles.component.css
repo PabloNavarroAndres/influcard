@@ -236,10 +236,10 @@
     padding-top: 10px;
 }
 
-.audience-section {
+.main-section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     flex: 1;
     gap: 10px;
 }

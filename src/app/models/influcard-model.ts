@@ -16,7 +16,7 @@ export interface Influcard extends InflucardResume {
   insight_perc_m: string;
   insight_perc_f: string;
   top_countries_formated: { href: string, value: string }[];
-  post_territory: { category: string, value: number, color: string }[];
+  post_territory: { category: string, value: number }[];
   account_post_moment: { total: string }[];
   brands_images: { image: string, name: string }[];
   reach_formated: string;

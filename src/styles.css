@@ -1,28 +1,30 @@
 :root {
   /* Borrar: Provisional para boceto (temporal) */
-  --background-color: #000;
-  --text-color: #fff;
+  /* --background-color: #000;
+  --text-color: #fff; */
 
   /* Estilos generales: tamaños letras y colores */
   --title-big-sections: 1.5rem;
   --title-mid-sections: 1.4rem;
   --paragraph-big-size: 1.2rem;
   --paragraph-small-size: 0.8rem;
-  --general-font-color: gray;
+  --general-font-color: #666666;;
   --general-font-color-2: black;
 
 }
 
 /* Modo oscuro (temporal) */
-body {
+/* body {
   background-color: var(--background-color)!important;
   color: var(--text-color)!important;
-}
+} */
 
-/* Modo esquema (temporal) */
 * {
-  background-color: rgb(0 110 0);
-  border: 1px solid black;
+  /* Modo esquema (temporal) */
+  /* background-color: rgb(0 110 0);
+  border: 1px solid black; */
+
+  color: var(--general-font-color);
 }
 
 /* Estilos de etiquetas generales */

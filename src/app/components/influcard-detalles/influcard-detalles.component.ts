@@ -322,7 +322,7 @@ export class InflucardDetallesComponent {
     }
 
 
-    /* (Uso de valores estaticos del JSON, no es necesario esto): */
+    /* (Descartar funcion de abajo, uso de datos JSON estáticos): */
     // update data with random values each 1.5 sec
     /* setInterval(function () {
       updateData();
@@ -516,7 +516,7 @@ export class InflucardDetallesComponent {
         am5.Circle.new(
           root,
           {
-            radius: 24
+            radius: 20
           },
           circleTemplate
         )
@@ -657,6 +657,11 @@ export class InflucardDetallesComponent {
       renderer: yRenderer
     }));
 
+    // Add "%" symbol to y-axis labels
+    yRenderer.labels.template.adapters.add("text", function (text) {
+      return text + "%";
+    });
+
     // Create series
     // https://www.amcharts.com/docs/v5/charts/xy-chart/series/
     let series = chart.series.push(am5xy.ColumnSeries.new(root, {
@@ -667,7 +672,7 @@ export class InflucardDetallesComponent {
       sequencedInterpolation: true,
       categoryXField: "country",
       tooltip: am5.Tooltip.new(root, {
-        labelText: "{valueY}"
+        labelText: "{valueY.formatNumber('#.00')}%"
       })
     }));
 
@@ -680,29 +685,37 @@ export class InflucardDetallesComponent {
       return chart.get("colors")?.getIndex(series.columns.indexOf(target));
     });
 
+    /* Valores de los dias formateados a number */
+    let lunes = Number(this.influcard?.post_week_day[0].engrate);
+    let martes = Number(this.influcard?.post_week_day[1].engrate);
+    let miercoles = Number(this.influcard?.post_week_day[2].engrate);
+    let jueves = Number(this.influcard?.post_week_day[3].engrate);
+    let viernes = Number(this.influcard?.post_week_day[4].engrate);
+    let sabado = Number(this.influcard?.post_week_day[5].engrate);
+    let domingo = Number(this.influcard?.post_week_day[6].engrate);
 
     // Set data
     let data = [{
       country: "L",
-      value: 1.2
+      value: lunes
     }, {
       country: "M",
-      value: 1.4
+      value: martes
     }, {
       country: "X",
-      value: 1.3
+      value: miercoles
     }, {
       country: "J",
-      value: 1.6
+      value: jueves
     }, {
       country: "V",
-      value: 1.8
+      value: viernes
     }, {
       country: "S",
-      value: 2
+      value: sabado
     }, {
       country: "D",
-      value: 2.1
+      value: domingo
     }];
 
     xAxis.data.setAll(data);

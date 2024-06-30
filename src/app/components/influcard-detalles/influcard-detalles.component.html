@@ -4,20 +4,20 @@
     <section class="account-info">
 
         <!-- Img Perfil -->
-        <div class="img-perfil">
+        <div class="img-profile">
             <img [src]="influcard?.account_picture" alt="imagen influencer">
             <div class="circle-rrss rrss-logo"></div>
         </div>
         
         <!-- Información cuenta -->
-        <div class="perfil-info">
+        <div class="profile-info">
 
             <!-- Nombre de usuario y url rrsss -->
-            <div class="username-perfil">
+            <div class="username-profile">
 
                 <span class="title-username"> {{ influcard?.username }} </span>
     
-                <span class="rrss-usuario">
+                <span class="rrss-user">
                     <i class="fa-brands fa-instagram fa-lg" style="color: #f74be0;"></i>
                     <a [href]="influcard?.account_url" target=”_blank”> {{ influcard?.username }} </a>
                 </span>
@@ -184,19 +184,19 @@
 
         <div class="audience-container card-style">
 
-            <div class="audiencia-info">
+            <div class="audience-info">
                 <span>Audiencia</span>
                 <i class="fa-solid fa-users fa-2xl"></i>
                 <span> {{ influcard?.followers_formated }} </span>
             </div>
 
-            <div class="audiencia-info">
+            <div class="audience-info">
                 <span>Seguidores Fake</span>
                 <i class="fa-solid fa-users fa-2xl"></i>
                 <span> {{ influcard?.fake_followers_formated }} % </span>
             </div>
 
-            <div class="audiencia-info">
+            <div class="audience-info">
                 <span>Audiencia Real</span>
                 <i class="fa-solid fa-users-line fa-2xl"></i>
                 <span> {{ influcard?.real_followers_formated }} </span>
@@ -402,12 +402,152 @@
     <!-- DESEMPEÑO -->
     <section class="main-section">
 
+        <div class="title-section card-style">
+            <div class="circle-big bg-performance">
+                <i class="fa-solid fa-chart-line fa-xl" style="color: white;"></i>
+            </div>
+            <span>DESEMPEÑO</span>
+        </div>
+
+        <!-- Audiencia y Alcance general -->
+        <div class="performance-container card-style">
+
+            <div class="section-performance">
+
+                <div>
+                    <div class="circle-mid bg-audience-2">
+                        <i class="fa-solid fa-users fa-sm" style="color: white;"></i>
+                    </div>
+
+                    <span>Audiencia</span>
+                </div>
+
+                <span> {{ influcard?.followers_formated }} </span>
+            </div>
+
+            <div class="section-performance">
+
+                <div>
+                    <div class="circle-mid bg-reach">
+                        <i class="fa-solid fa-user fa-sm" style="color: white;"></i>
+                    </div>
+
+                    <span>Alcance</span>
+                </div>
+
+                <span> {{ influcard?.reach_formated }} </span>
+            </div>
+
+        </div>
+
+        <!-- Impresiones -->
+        <div class="performance-container card-style">
+
+            <div class="section-performance">
+
+                <div>
+                    <div class="circle-mid bg-impressions">
+                        <i class="fa-solid fa-fingerprint fa-sm" style="color: white;"></i>
+                    </div>
+
+                    <span>Impresiones</span>
+                </div>
+
+                <span> {{ influcard?.impressions_formated }} </span>
+            </div>
+
+            <div class="section-info-performance">
+
+                <div>
+                    <span> {{ influcard?.ir_alcance }}% </span>
+                    <span>Alcance</span>
+                </div>
+
+                <div>
+                    <span> {{ influcard?.ir_audiencia }}% </span>
+                    <span>Audiencia</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Reproducciones -->
+        <div class="performance-container card-style">
+
+            <div class="section-performance">
+
+                <div>
+                    <div class="circle-mid bg-views">
+                        <i class="fa-solid fa-play fa-sm" style="color: white;"></i>
+                    </div>
+
+                    <span>Reproducciones</span>
+                </div>
+
+                <span> {{ influcard?.vplays_formated }} </span>
+            </div>
+
+            <div class="section-info-performance">
+
+                <div>
+                    <span> {{ influcard?.vr_alcance }}% </span>
+                    <span>Alcance</span>
+                </div>
+
+                <div>
+                    <span> {{ influcard?.vr_audiencia }}% </span>
+                    <span>Audiencia</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Engagement -->
+        <div class="performance-container card-style">
+
+            <div class="section-performance">
+
+                <div>
+                    <div class="circle-mid bg-engagement">
+                        <i class="fa-solid fa-heart fa-sm" style="color: white;"></i>
+                    </div>
+
+                    <span>Engagement</span>
+                </div>
+
+                <span> {{ influcard?.engagement_formated }} </span>
+            </div>
+
+            <div class="section-info-performance">
+
+                <div>
+                    <span> {{ influcard?.er_alcance }}% </span>
+                    <span>Alcance</span>
+                </div>
+
+                <div>
+                    <span> {{ influcard?.er_audiencia }}% </span>
+                    <span>Audiencia</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Engagement rate segun dia de publicacion (amchart) -->
+        <div class="distribution-gender-country">
+
+            <div class="distribution-container card-style">
+
+                <span>Engagement rate según día de publicación</span>
+
+                <!-- Amchart Distribucion por genero -->
+                <div id="chartdiv4" style="width: 100%; height: 300px"></div>
+            </div>
+        </div>
+
     </section>
 
 </section>
-
-
-
-
-<!-- Amchart final (4) -> MOVER DE AQUI AL FINAL -->
-<!-- <div id="chartdiv4" style="width: 100%; height: 300px"></div> -->

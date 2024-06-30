@@ -3,6 +3,7 @@
 .header-info {
     display: flex;
     justify-content: space-between;
+    padding: 20px;
 }
 
 .account-info {
@@ -15,7 +16,7 @@
     font-size: 1.7rem;
 }
 
-.username-perfil {
+.username-profile {
     display: flex;
     flex-direction: column;
 }
@@ -54,8 +55,8 @@
 
 .circle-mid {
     position: relative;
-    width: 24px;
-    height: 24px;
+    width: 44px;
+    height: 44px;
     border-radius: 85px;
 }
 
@@ -95,27 +96,27 @@
     background-repeat: no-repeat;
 }
 
-.rrss-usuario {
+.rrss-user {
     display: flex;
     align-items: center;
     gap: 6px;
 }
 
-.rrss-usuario > a {
+.rrss-user > a {
     color: rgb(69, 69, 255) !important;
 }
 
-.img-perfil {
+.img-profile {
     position: relative;
     padding-left: 15px;
 }
 
-.img-perfil>img {
+.img-profile>img {
     width: 150px;
     border-radius: 100px 100px 40px 100px;
 }
 
-.perfil-info {
+.profile-info {
     display: flex;
     gap: 30px;
     flex-direction: column;
@@ -260,7 +261,7 @@
     padding: 25px;
 }
 
-.audiencia-info {
+.audience-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -380,5 +381,41 @@
     object-fit: contain;
 }
 
+/* DESEMPEÑO SECCION */
+
+.performance-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.section-performance {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.section-performance > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: var(--paragraph-big-size);
+}
+
+.section-info-performance {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.section-info-performance div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 

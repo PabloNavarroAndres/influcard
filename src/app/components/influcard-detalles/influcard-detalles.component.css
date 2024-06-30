@@ -236,6 +236,10 @@
     box-shadow: 0px 3px 10px -3px rgba(0, 0, 0, 0.75);
 }
 
+.btn-captura {
+    cursor: pointer;
+}
+
 /* Secciones principales */
 
 .main-sections {
@@ -298,7 +302,8 @@
 }
 
 .distribution-container > span {
-    font-size: var(--paragraph-big-size);
+    font-size: var(--title-mid-sections);
+    text-align: center;
 }
 
 .distribution-list {
@@ -407,8 +412,13 @@
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: var(--paragraph-big-size);
 }
+
+.section-performance > div,
+.section-performance > span {
+    font-size: var(--title-mid-sections);
+}
+
 
 .section-info-performance {
     display: flex;

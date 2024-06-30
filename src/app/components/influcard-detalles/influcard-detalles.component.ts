@@ -7,11 +7,14 @@ import { CommonModule } from '@angular/common';
 import { Inject, NgZone, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
+import Swal from 'sweetalert2';
+
 // amCharts imports
 import * as am5xy from '@amcharts/amcharts5/xy';
 import * as am5 from "@amcharts/amcharts5";
 import * as am5percent from "@amcharts/amcharts5/percent";
 import am5themes_Animated from '@amcharts/amcharts5/themes/Animated';
+import html2canvas from 'html2canvas';
 
 
 @Component({
@@ -78,12 +81,6 @@ export class InflucardDetallesComponent {
       }
     });
 
-
-
-  }
-
-  descargarInflucard(): void {
-    /* ... */
   }
 
   ngAfterViewInit() {
@@ -732,5 +729,81 @@ export class InflucardDetallesComponent {
 
   }
 
+  /* Captura de pantalla para influcard-detalles */
+  captureScreen() {
+    const body = document.body;
+    this.preloadImages(body).then(() => {
+
+      // Mostrar Swal antes de iniciar la captura
+      Swal.fire({
+        title: 'Cargando...',
+        html: 'Espere un momento por favor...',
+        didOpen: () => {
+          Swal.showLoading();
+
+          // Iniciar Captura de pantalla
+          html2canvas(body, {
+            useCORS: true,
+            scale: 1,
+            logging: true,
+            windowWidth: document.documentElement.scrollWidth,
+            windowHeight: document.documentElement.scrollHeight
+
+          }).then((canvas) => {
+
+            const imageData = canvas.toDataURL('image/png');
+            // Guardar imagen procesada
+            this.saveImage(imageData);
+
+            // Cerrar Swal después de que la captura se haya completado
+            Swal.close();
+
+            // Mensaje Swal de exito
+            Swal.fire({
+              title: "¡Éxito!",
+              html: "La Imagen se ha guardado con éxito.",
+              icon: "info",
+              showCloseButton: true,
+              focusConfirm: false,
+            });
+
+          }).catch((error) => {
+
+            console.error('Error capturando la pantalla:', error);
+            Swal.close();
+
+            // Mensaje de error
+            Swal.fire({
+              title: 'Error',
+              text: 'Ocurrió un error al capturar la pantalla.',
+              icon: 'error'
+            });
+          });
+        }
+      });
+    });
+  }
+
+  preloadImages(element: HTMLElement): Promise<void[]> {
+    const images = Array.from(element.getElementsByTagName('img'));
+    const promises = images.map((img) => {
+      return new Promise<void>((resolve) => {
+        if (img.complete) {
+          resolve();
+        } else {
+          img.onload = () => resolve();
+          img.onerror = () => resolve();
+        }
+      });
+    });
+    return Promise.all(promises);
+  }
+
+  saveImage(dataUrl: string) {
+    const link = document.createElement('a');
+    link.href = dataUrl;
+    link.download = 'influcard_' + this.influcard?.username + '.png';
+    link.click();
+  }
 
 }

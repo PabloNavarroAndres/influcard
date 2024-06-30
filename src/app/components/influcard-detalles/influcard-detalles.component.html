@@ -172,6 +172,7 @@
 
 <section class="main-sections">
 
+    <!-- AUDIENCIA -->
     <section class="main-section">
 
         <div class="title-section card-style">
@@ -350,6 +351,7 @@
 
     </section>
 
+    <!-- PUBLICACIONES -->
     <section class="main-section">
 
         <div class="title-section card-style">
@@ -359,24 +361,30 @@
             <span>PUBLICACIONES</span>
         </div>
 
-        <div class="audience-container card-style">
+        <div class="distribution-container card-style">
 
-            <div class="audiencia-info">
-                <span>Audiencia</span>
-                <i class="fa-solid fa-users fa-2xl"></i>
-                <span> {{ influcard?.followers_formated }} </span>
-            </div>
+            <span>Distribución de sus publicaciones por territorios</span>
 
-            <div class="audiencia-info">
-                <span>Seguidores Fake</span>
-                <i class="fa-solid fa-users fa-2xl"></i>
-                <span> {{ influcard?.fake_followers_formated }} % </span>
-            </div>
+            <!-- Amchart 2: Distribución de sus publicaciones por territorios -->
+            <div id="chartdiv2" style="width: 100%; height: 300px"></div>
+        </div>
 
-            <div class="audiencia-info">
-                <span>Audiencia Real</span>
-                <i class="fa-solid fa-users-line fa-2xl"></i>
-                <span> {{ influcard?.real_followers_formated }} </span>
+        <div class="distribution-container card-style">
+
+            <span>Franja horaria de sus publicaciones</span>
+
+            <!-- Amchart 3: Franja horaria de sus publicaciones -->
+            <div id="chartdiv3" style="width: 100%; height: 300px"></div>
+        </div>
+
+        <div class="distribution-container card-style">
+
+            <span>Marcas con las que ha trabajado</span>
+
+            <div>
+                @for (marca of influcard?.brands_images; track $index) {
+                    
+                }
             </div>
 
         </div>
@@ -386,7 +394,7 @@
 
 
 
-
+    <!-- DESEMPEÑO -->
     <section class="main-section">
 
     </section>

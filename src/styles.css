@@ -1,7 +1,9 @@
 :root {
+  /* Borrar: Provisional para boceto (temporal) */
   --background-color: #000;
   --text-color: #fff;
 
+  /* Estilos generales: tamaños letras y colores */
   --title-big-sections: 1.5rem;
   --title-mid-sections: 1.4rem;
   --paragraph-big-size: 1.2rem;
@@ -23,6 +25,7 @@ body {
   border: 1px solid black;
 }
 
+/* Estilos de etiquetas generales */
 ol, ul {
   margin: 0 !important;
   padding: 0 !important;

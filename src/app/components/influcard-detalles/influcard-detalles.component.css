@@ -1,4 +1,4 @@
-/* Header Section */
+/* Encabezado estilos */
 
 .header-info {
     display: flex;
@@ -31,6 +31,9 @@
     align-items: center;
 }
 
+/* Secciones principales estilos */
+
+/* Estilos circulos con logo general */
 .circle-big {
     position: relative;
     width: 52px;
@@ -64,6 +67,7 @@
     transform: translate(50%, -50%);
 }
 
+/* Fondos logos en "circle-big" */
 .bg-audicence, .bg-performance, .bg-engagement {
     background-color: rgb(0, 171, 228);
 }
@@ -181,7 +185,7 @@
 }
 
 .circular-chart.yellow .circle {
-    stroke: yellow;
+    stroke: #e1d800;
 }
 
 .circular-chart.lightseagreen .circle {
@@ -244,6 +248,11 @@
     gap: 10px;
 }
 
+/* Espaciado final para contenedor "Distribucion por edad" */
+.main-section:nth-child(1) > div:nth-child(3) {
+    padding-bottom: 80px;
+}
+
 .audience-container {
     display: flex;
     align-items: center;
@@ -271,6 +280,7 @@
     font-weight: bold;
 }
 
+/* Estilo general para los contenedores de graficas "amchart" */
 .distribution-container {
     display: flex;
     flex-direction: column;
@@ -279,6 +289,7 @@
     padding: 10px;
     padding-top: 10px;
     gap: 10px;
+    padding-bottom: 20px;
 }
 
 .distribution-container > span {
@@ -326,22 +337,23 @@
     width: 60%;
 } 
 
-
 .bar-container {
-    width: 70%; /* Ancho total del contenedor */
-    height: 10px; /* Altura de la barra */
-    background-color: #cbe3ff; /* Color de fondo del contenedor */
-    border-radius: 15px; /* Bordes redondeados */
-    overflow: hidden; /* Esconder contenido desbordado */
+    width: 70%;
+    height: 10px;
+    background-color: #cbe3ff;
+    border-radius: 15px;
+    overflow: hidden;
     flex: 1;
 }
 
+/* Estilo barra horizontal general (amchart) */
 .bar {
     height: 100%;
     background-color: #00a2ff;
     border-radius: 10px;
 }
 
+/* Estilo barra amchart para distribucion por pais (amchart) */
 .bar-country {
     height: 100%;
     background-color: #ff4343;
@@ -350,10 +362,3 @@
 
 
 
-.posts-section {
-    flex: 1;
-}
-
-.performance-section {
-    flex: 1;
-}

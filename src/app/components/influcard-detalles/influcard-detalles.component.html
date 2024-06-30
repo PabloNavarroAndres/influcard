@@ -381,11 +381,16 @@
 
             <span>Marcas con las que ha trabajado</span>
 
-            <div>
+            <ul class="brands-list">
+
                 @for (marca of influcard?.brands_images; track $index) {
-                    
+
+                    <li class="brand-item">
+                        <img [src]="marca.image" alt="imagen empresa">
+                        <span> {{ marca.name }} </span>
+                    </li>
                 }
-            </div>
+            </ul>
 
         </div>
 

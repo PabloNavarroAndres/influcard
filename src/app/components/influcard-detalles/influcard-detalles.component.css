@@ -360,5 +360,25 @@
     border-radius: 10px;
 }
 
+/* Seccion de marcas con las que se ha trabajado */
+.brands-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.brand-item > img {
+    width: 100%;
+    height: 50%;
+    object-fit: contain;
+}
+
 
 

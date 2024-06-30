@@ -192,16 +192,63 @@
     margin-right: 10px;
 }
 
+/* Media Query: Pc pequeño */
+@media (max-width: 1300px) {
+    
+    .influcard {
+        width: 45%;
+        padding-top: 15px;
+    }
+    
+    .influcard-right span {
+        font-size: 1.3rem;
+    }
+    
+    .influcard > i {
+        padding: 15px;
+    }
+
+}
+
 /* Media Query: Tablet */
-@media (max-width: 768px) {
+@media (max-width: 8500px) {
     
+    .influcard {
+        width: 85%;
+        padding-top: 25px;
+    }
+
+    .influcard-right span {
+        font-size: 1.6rem;
+    }
     
+    .influcard > i {
+        padding: 25px;
+    }
+
 
 }
 
 /* Media Query: Movil */
 @media (max-width: 480px) {
     
-    
+    .influcard {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+
+    .stadistic-container {
+        font-size: 1.1rem;
+    }
+
+    .influcard-left {
+        flex: 0.70;
+    }
+
+    .influcard-right {
+        padding-top: 12px;
+    }
+
+
 
 }

@@ -83,20 +83,6 @@ export class InflucardComponent {
     });
   }
 
-
-  // Obtener influcard buscada por id
-  /* getInflucardById(id: string): void {
-    this._influcardService.getInflucardById(id).subscribe ({
-      
-      next: (data?: Influcard) => {
-        this.influcard = data;
-      },
-      error(err) {
-        console.error('Error obteniendo datos de Influcard:', err);
-      },
-    });
-  } */
-
   // Obtener influcard buscada por id
   getInflucardById(id: string): void {
 

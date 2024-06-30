@@ -7,6 +7,7 @@ import { CommonModule } from '@angular/common';
 import { Inject, NgZone, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 
+// Swal import
 import Swal from 'sweetalert2';
 
 // amCharts imports
@@ -60,26 +61,9 @@ export class InflucardDetallesComponent {
   }
 
   ngOnInit(): void {
-    
-    /* MANTENER ESTA FUNCION AL TERMINAR PROYECTO: */
-    /* // Se busca la influcard de la que vamos a ver detalles
-    this.influcard = this._influcardService.getInflucardData(); */
 
-    /* Obtenerlo directamente al entrar (TEMPORAL - BORRAR AL TERMINAR) */
-    this._influcardService.getInflucardById("4__4355072").subscribe ({
-      next: (data?: Influcard) => {
-        this.influcard = data;
-
-        // Guardar influcard encontrado en el servicio influcard
-        this._influcardService.setInflucardData(data);
-
-        /* this.ngAfterViewInit(); */
-      },
-      error: (err) => {
-
-        console.error('Error obteniendo datos de Influcard:', err);
-      }
-    });
+    // Se busca la influcard de la que vamos a ver detalles
+    this.influcard = this._influcardService.getInflucardData();
 
   }
 
@@ -104,17 +88,12 @@ export class InflucardDetallesComponent {
 
         /* Amchart 4: Engagement posts por dia de publicacion */
         this.createEngagementRateChart();
-
-        /* this.createRelevanceChart(
-          this.influcard.reach_formated_graph || 0,
-          this.influcard.relevance_formated_graph || 0
-        ); */
       }
     });
   }
 
   ngOnDestroy() {
-    // Clean up chart when the component is removed
+    // Resetear chart al salir del componente
     this.browserOnly(() => {
       this.roots.forEach(root => root.dispose());
     });
@@ -319,7 +298,7 @@ export class InflucardDetallesComponent {
     }
 
 
-    /* (Descartar funcion de abajo, uso de datos JSON estáticos): */
+    /* (Descartada funcion de actualizar de amchart, se usan datos JSON estáticos): */
     // update data with random values each 1.5 sec
     /* setInterval(function () {
       updateData();

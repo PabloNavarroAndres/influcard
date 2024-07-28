@@ -1860,160 +1860,84 @@
         ],
         "brands_images": [
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=31",
+                "image": "https://i.ibb.co/SQb3rNS/benefit-logo.png",
                 "name": "Benefit"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=32",
-                "name": "NYX"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=33",
-                "name": "MAC"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=34",
-                "name": "NARS"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=35",
-                "name": "YSL"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=44",
-                "name": "Guerlain"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=45",
+                "image": "https://i.ibb.co/GRxrKG7/estee-lauder-logo.png",
                 "name": "Estee Lauder"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=49",
-                "name": "Clarins"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=50",
-                "name": "Lancome"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=51",
+                "image": "https://i.ibb.co/WtVyZpJ/loewe-logo.png",
                 "name": "Loewe"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=70",
-                "name": "Disney Paris"
+                "image": "https://i.ibb.co/b3CfFpJ/lancome-logo.png",
+                "name": "Lancome"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=86",
-                "name": "GAP"
+                "image": "https://i.ibb.co/8BFGjdy/disneyland-logo.png",
+                "name": "Disneyland Paris"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=87",
+                "image": "https://i.ibb.co/2WqC7BK/pull-and-bear-logo.png",
                 "name": "Pull & Bear"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=88",
-                "name": "Zara"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=89",
+                "image": "https://i.ibb.co/8739bSK/mango-logo.png",
                 "name": "Mango"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=90",
+                "image": "https://i.ibb.co/5Y5SZWh/h-m-logo.png",
                 "name": "H & M"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=97",
-                "name": "Dior"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=99",
-                "name": "Massimo Dutti"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=102",
+                "image": "https://i.ibb.co/88MvNZr/hugo-boss-logo.png",
                 "name": "Hugo Boss"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=105",
+                "image": "https://i.ibb.co/bv745F0/nike-logo.png",
                 "name": "Nike"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=111",
+                "image": "https://i.ibb.co/TTDYp2S/nyx-logo.png",
+                "name": "Nyx"
+            },
+            {
+                "image": "https://i.ibb.co/m9hhpcb/new-balance-logo.png",
                 "name": "New Balance"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=156",
-                "name": "Iberia"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=169",
+                "image": "https://i.ibb.co/Kb47JDm/mazda-logo.png",
                 "name": "Mazda"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=183",
+                "image": "https://i.ibb.co/dkrbbgZ/coca-cola-logo.png",
                 "name": "CocaCola"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=200",
-                "name": "Carrefour"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=281",
+                "image": "https://i.ibb.co/Jj9wXpS/corte-ingles-logo.png",
                 "name": "El Corte Ingl\u00e9s"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=289",
+                "image": "https://i.ibb.co/ftxXGtW/primor-logo.png",
                 "name": "Primor"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=291",
+                "image": "https://i.ibb.co/ch45p01/primark-logo.png",
                 "name": "Primark"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=386",
+                "image": "https://i.ibb.co/9pbGFTD/calvin-klein-logo.png",
                 "name": "Calvin Klein"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=389",
-                "name": "Isdin"
+                "image": "https://i.ibb.co/h8Z2DT8/iberia-logo.png",
+                "name": "Iberia"
             },
             {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=469",
-                "name": "Women'secret"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=481",
-                "name": "ralph lauren corporation"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=715",
-                "name": "Maybelline"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=903",
-                "name": "L'Or\u00e9al"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=1119",
-                "name": "Lego"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=2293",
-                "name": "Mo\u00ebt & Chandon"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=9265",
-                "name": "Mar de Frades"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=32156",
-                "name": "Only"
-            },
-            {
-                "image": "https:\/\/images.brandmanic.com\/api\/v1\/getimage?type=9&account=32159",
-                "name": "IKKS"
+                "image": "https://i.ibb.co/qBCWjv2/Guerlain-logo.png",
+                "name": "Guerlain"
             }
         ],
         "likes_formated": "11.65 K",

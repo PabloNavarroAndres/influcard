@@ -240,7 +240,7 @@
     }
 
     .influcard, .stadistic-container {
-        font-size: 0.95rem;
+        font-size: 0.90rem;
     }
 
     .influcard-left {
@@ -253,6 +253,6 @@
     }
 
     .stadistic-container {
-        padding-right: 15px;
+        padding-right: 6px;
     }
 }

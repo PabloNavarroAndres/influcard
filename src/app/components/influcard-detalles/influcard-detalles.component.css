@@ -448,6 +448,10 @@
     .stadistics-wrapper {
         justify-content: center;
     }
+
+    .brand-item {
+        width: 33%;
+    }
 }
 
 /* Media Query: Tablet */
@@ -467,7 +471,7 @@
 
     .main-sections {
         display: flex;
-        flex-wrap: wrap; /* Permitir el wrapping de los elementos */
+        flex-wrap: wrap;
         gap: 10px;
         padding-top: 10px;
     }
@@ -480,9 +484,8 @@
         gap: 10px;
     }
 
-    /* Ajustar el orden para evitar el hueco */
     .main-section:nth-child(3) {
-        order: -1; /* Mover la tercera columna al frente */
+        order: -1;
     }
 
     .img-profile>img {
@@ -515,6 +518,10 @@
         flex-direction: column;
     }
 
+    .brand-item {
+        width: 25%;
+    }
+
 
 }
 
@@ -523,6 +530,10 @@
 
     .header-stadistics {
         width: 100%;
+    }
+
+    .brand-item {
+        width: 33%;
     }
 
 }
